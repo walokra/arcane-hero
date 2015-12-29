@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+<% include ../partials/nav.ejs %>
+
+<div class="container">
+    <h2>Heroku information</h2>
+
+    <h3>App info</h3>
+    <div>
+        <pre><%= JSON.stringify(info, null, 2) %></pre>
+    </div>
+
+    <h3>Release info</h3>
+    <div>
+        <pre><%= JSON.stringify(release, null, 2) %></pre>
+    </div>
+
+</div>
+
+</body>
+</html>
